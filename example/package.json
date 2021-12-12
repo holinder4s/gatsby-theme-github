@@ -1,16 +1,18 @@
 {
+  "private": "true",
   "name": "example",
   "version": "1.0.0",
   "main": "index.js",
-  "author": "christopherbiscardi <chris@christopherbiscardi.com> (@chrisbiscardi)",
+  "author": "holinder4s <holinder4s@gmail.com> (@holinder4s)",
   "license": "MIT",
   "scripts": {
     "develop": "gatsby develop",
-    "build": "gatsby build"
+    "build": "gatsby build",
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^3.14.6",
-    "gatsby-theme-minimal": "^1.0.0",
+    "gatsby": "^4.3.0",
+    "gatsby-theme-github": "*",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
