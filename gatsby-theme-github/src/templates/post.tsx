@@ -1,26 +1,36 @@
 import React, { FC } from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/Layout"
+import Layout, { LayoutMode } from "../components/Layout"
 import Post from "../components/Post"
 
 export const query = graphql`
     query($postID: String!) {
-        markdownRemark(id: { eq: $postID }) {
-            id
+        post: markdownRemark(id: { eq: $postID }) {
             html
+            info: frontmatter {
+                date(fromNow: true)
+                title
+            }
         }
     }
 `
 
 interface Props {
-    data: any
+    data: {
+        post: {
+            html: string
+            info: {
+                date: string
+            }
+        }
+    }
 }
 
-const PostTemplate: FC<Props> = data => {
+const PostTemplate: FC<Props> = ({ data }) => {
     return (
-        <Layout>
-            <Post {...data.data.markdownRemark} />
+        <Layout mode={LayoutMode.NavTab}>
+            <Post {...data.post} />
         </Layout>
     )
 }

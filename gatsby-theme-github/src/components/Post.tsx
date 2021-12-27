@@ -1,26 +1,16 @@
 import React, { FC } from "react"
 
-const PostDate: FC<any> = data => {
-    const isOneDay = true
-    return (
-        <>
-            <time dateTime=''></time>
-            {!isOneDay && <>6878</>}
-        </>
-    )
+interface Props {
+    html: string
+    info: {
+        date: string
+    }
 }
 
-const Post: FC<any> = ({ name, id, location, url, startDate, endDate }) => (
+const Post: FC<any> = ({ html, info }) => (
     <div>
-        <h2>
-            {name} ({location})
-        </h2>
-        <p>
-            <PostDate startDate={startDate} endDate={endDate} />
-        </p>
-        <p>
-            Website: <a href={url}>{url}</a> {id}
-        </p>
+        {info.date}
+        <div dangerouslySetInnerHTML={{ __html: html }} />
     </div>
 )
 
