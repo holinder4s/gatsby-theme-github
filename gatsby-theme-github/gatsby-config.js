@@ -6,6 +6,7 @@ module.exports = ({ contentsPath = DEFAULT_CONTENTS_PATH }) => ({
     },
     plugins: [
         'gatsby-plugin-typescript',
+        'gatsby-plugin-styled-components',
         {
             resolve: "gatsby-source-filesystem",
             options: {

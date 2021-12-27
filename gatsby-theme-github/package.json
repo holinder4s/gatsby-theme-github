@@ -16,9 +16,11 @@
   },
   "dependencies": {
     "gatsby": "^4.3.0",
+    "gatsby-plugin-styled-components": "^5.4.0",
     "gatsby-plugin-typescript": "^4.4.0",
     "gatsby-source-filesystem": "^4.3.0",
     "gatsby-transformer-remark": "^5.4.0",
+    "styled-components": "^5.3.3",
     "typescript": "^4.5.4"
   }
 }
