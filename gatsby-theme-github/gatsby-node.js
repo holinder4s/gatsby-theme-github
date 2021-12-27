@@ -91,7 +91,7 @@ exports.createPages = async ({ actions, graphql, reporter }, options) => {
 
     const posts = result.data.allMarkdownRemark.nodes
     posts.forEach(post => {
-        const slug = post.slug
+        const slug = post.fields.slug
         actions.createPage({
             path: slug,
             component: require.resolve("./src/templates/post.tsx"),
