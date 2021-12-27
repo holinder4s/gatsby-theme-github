@@ -3,8 +3,8 @@ module.exports = {
     {
       resolve: `gatsby-theme-github`,
       options: {
-        contentPath: "events",
-        basePath: "/events",
+        contentPath: "contents",
+        basePath: "/",
       },
     },
   ],
