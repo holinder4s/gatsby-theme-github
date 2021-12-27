@@ -1,7 +1,11 @@
-import React from "react"
+import React, { FC } from "react"
 import { Link } from "gatsby"
 
-const PostList = ({ posts }) => (
+interface Props {
+    posts: any[]
+}
+
+const PostList: FC<Props> = ({ posts }) => (
     <>
         <h2>Post List</h2>
         <ul>

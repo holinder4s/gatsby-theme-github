@@ -1,7 +1,6 @@
-import React from "react"
+import React, { FC } from "react"
 
-const PostDate = data => {
-    console.log(data)
+const PostDate: FC<any> = data => {
     const isOneDay = true
     return (
         <>
@@ -11,7 +10,7 @@ const PostDate = data => {
     )
 }
 
-const Post = ({ name, id, location, url, startDate, endDate }) => (
+const Post: FC<any> = ({ name, id, location, url, startDate, endDate }) => (
     <div>
         <h2>
             {name} ({location})

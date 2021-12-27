@@ -1,7 +1,7 @@
-import React from "react"
+import React, { FC } from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../components/Layout"
 import Post from "../components/Post"
 
 export const query = graphql`
@@ -13,10 +13,16 @@ export const query = graphql`
     }
 `
 
-const PostTemplate = data => {
-    <Layout>
-        <Post {...data.markdownRemark} />
-    </Layout>
+interface Props {
+    data: any
+}
+
+const PostTemplate: FC<Props> = data => {
+    return (
+        <Layout>
+            <Post {...data.data.markdownRemark} />
+        </Layout>
+    )
 }
 
 export default PostTemplate
