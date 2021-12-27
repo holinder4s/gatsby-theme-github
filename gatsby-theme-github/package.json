@@ -16,9 +16,7 @@
   },
   "dependencies": {
     "gatsby": "^4.3.0",
-    "gatsby-plugin-theme-ui": "^0.12.1",
     "gatsby-source-filesystem": "^4.3.0",
-    "gatsby-transformer-yaml": "^4.3.0",
-    "theme-ui": "^0.12.1"
+    "gatsby-transformer-yaml": "^4.3.0"
   }
 }
