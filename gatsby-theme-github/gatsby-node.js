@@ -1,4 +1,5 @@
 const fs = require("fs")
+const { createFilePath } = require(`gatsby-source-filesystem`)
 const DEFAULT_BASE_PATH = '/'
 const DEFAULT_CONTENTS_PATH = 'contents'
 
