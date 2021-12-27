@@ -1,15 +1,23 @@
-module.exports = ({ contentPath = "data", basePath = "/" }) => ({
+const DEFAULT_CONTENTS_PATH = 'contents'
+
+module.exports = ({ contentsPath = DEFAULT_CONTENTS_PATH }) => ({
+    siteMetadata: {
+        title: `Title from siteMetadata 111`,
+    },
     plugins: [
+        'gatsby-plugin-typescript',
         {
             resolve: "gatsby-source-filesystem",
             options: {
-                path: contentPath,
+                path: contentsPath,
             },
         },
         {
-            resolve: "gatsby-transformer-yaml",
+            resolve: "gatsby-transformer-remark",
             options: {
-                typeName: "Event",
+                footnotes: true,
+                gfm: true,
+                plugins: [],
             },
         },
     ],

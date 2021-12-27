@@ -16,7 +16,9 @@
   },
   "dependencies": {
     "gatsby": "^4.3.0",
+    "gatsby-plugin-typescript": "^4.4.0",
     "gatsby-source-filesystem": "^4.3.0",
+    "gatsby-transformer-remark": "^5.4.0",
     "gatsby-transformer-yaml": "^4.3.0"
   }
 }
