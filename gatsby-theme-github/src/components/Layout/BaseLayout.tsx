@@ -1,15 +1,10 @@
 import React, { FC } from 'react'
-import normalize from 'normalize.css'
-import { createGlobalStyle } from 'styled-components'
 import TopBar from './TopBar'
-
-const GlobalStyle = createGlobalStyle`
-    ${normalize}
-`
+import Index from '../global/Style'
 
 const BaseLayout: FC = ({ children }) => (
     <>
-        <GlobalStyle />
+        <Index />
         <TopBar />
         {children}
     </>
