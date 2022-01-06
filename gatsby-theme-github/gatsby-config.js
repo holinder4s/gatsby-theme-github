@@ -5,6 +5,7 @@ module.exports = ({ contentsPath = DEFAULT_CONTENTS_PATH }) => ({
         title: `Title from siteMetadata 111`,
     },
     plugins: [
+        'gatsby-plugin-sass',
         'gatsby-plugin-typescript',
         'gatsby-plugin-styled-components',
         {
