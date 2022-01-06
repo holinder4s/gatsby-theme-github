@@ -1,10 +1,10 @@
 import React, { FC } from 'react'
 import TopBar from './TopBar'
-import Index from '../global/Style'
+import GlobalStyle from '../global/Style'
 
 const BaseLayout: FC = ({ children }) => (
     <>
-        <Index />
+        <GlobalStyle />
         <TopBar />
         {children}
     </>
