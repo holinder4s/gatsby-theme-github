@@ -1,6 +1,6 @@
 import React, { FC } from 'react'
 
-import NavTabLayout from './NavTabLayout'
+import NavTabLayout from './NavTabLayout/NavTabLayout'
 import SimpleLayoutLayout from './SimpleLayout'
 
 export enum LayoutMode {
